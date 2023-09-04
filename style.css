@@ -1,0 +1,495 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Variable Definitions */
+
+:root {
+  --heading-color: #033d63;
+  --heading-size: 40px;
+  --sub-heading-color: red;
+  --sub-heading-size: 30px;
+  --para-color: black;
+  --para-size: 18px;
+  --para-font: sans-serif;
+}
+
+body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Header Styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+header img {
+  width: 180px;
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.right-header ul {
+  font-weight: 900;
+  transition: 0.2s;
+}
+
+.right-header ul:hover {
+  color: var(--sub-heading-color);
+  cursor: pointer;
+}
+
+/* Banner Styles */
+
+.banner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-container img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-container p {
+  position: absolute;
+  left: 20px;
+  font-size: var(--heading-size);
+  text-transform: uppercase;
+}
+
+/* Section Styles */
+.bottom-section {
+  padding: 0 40px 50px 40px;
+}
+
+.sub-section {
+  margin-bottom: 50px;
+}
+
+/* First Subsection Styles */
+.title {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 30px;
+}
+
+.title img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.title h1 {
+  font-size: var(--heading-size);
+  color: var(--heading-color);
+}
+
+.title-desc {
+  font-size: var(--para-size);
+  font-family: var(--para-font);
+  font-weight: 400;
+}
+
+.jar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.jar-container {
+  width: 450px;
+}
+
+.jar img {
+  width: 100%;
+  border: 1px solid var(--heading-color);
+}
+
+.jar h3 {
+  font-size: var(--sub-heading-size);
+  color: var(--sub-heading-color);
+  text-align: center;
+}
+
+.jar p {
+  font-size: var(--para-size);
+  text-align: center;
+  font-family: var(--para-font);
+  margin-top: 10px;
+}
+
+/* Second Subsection Styles */
+.mini-section {
+  padding: 30px 0 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.mini-section img {
+  width: 350px;
+}
+
+.mini-section > div h3 {
+  font-size: var(--sub-heading-size);
+  color: var(--sub-heading-color);
+}
+
+.mini-section > div p {
+  font-size: var(--para-size);
+  font-family: var(--para-font);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Bullets Point Styles */
+.bullets-point-a,
+.bullets-point-b {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.bullets-point-a li,
+.bullets-point-b li {
+  font-size: var(--para-size);
+  font-family: var(--para-font);
+}
+
+/* Second Subsection Specific Styles */
+.second-sub-second {
+  flex-direction: row-reverse;
+  /* margin-top: -50px; */
+}
+
+.second-sub-second img {
+  width: 300px;
+}
+
+/* Footer */
+
+.footer {
+  border-top: 5px solid red;
+}
+
+.footer-section {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.footer-section p {
+  font-family: var(--para-font);
+  font-size: var(--para-size);
+  margin-bottom: 10px;
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.lower-footer p {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: var(--para-size);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 2560px) {
+  /* Styles for screens with a width of 2560px or wider */
+
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  header img {
+    width: 250px;
+  }
+
+  .right-header {
+    width: 50rem;
+  }
+
+  .right-header ul {
+    font-size: 25px;
+  }
+
+  .banner-container p {
+    font-size: 50px;
+  }
+
+  .title img {
+    width: 60px;
+  }
+
+  .title h1 {
+    font-size: 60px;
+  }
+
+  .title-desc {
+    font-size: 30px;
+  }
+
+  .jar-container {
+    width: 800px;
+  }
+
+  .jar h3 {
+    font-size: 50px;
+  }
+
+  .jar p {
+    font-size: 30px;
+  }
+
+  .mini-section > div h3 {
+    font-size: 50px;
+  }
+
+  .mini-section > div p {
+    font-size: 30px;
+  }
+
+  .bullets-point-a li,
+  .bullets-point-b li {
+    font-size: 30px;
+  }
+
+  .mini-section img {
+    width: 500px;
+  }
+
+  .footer-section p {
+    font-size: 30px;
+  }
+}
+
+/* Media Query for Screens Between 1024px and 1444px */
+@media screen and (min-width: 1024px) and (max-width: 1444px) {
+  /* Styles for screens between 1024px and 1444px */
+
+  .banner-container p {
+    font-size: 25px;
+  }
+
+  .title img {
+    width: 30px;
+  }
+
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .title-desc {
+    font-size: 15px;
+  }
+
+  .jar h3 {
+    font-size: 25px;
+  }
+
+  .jar p {
+    font-size: 15px;
+  }
+
+  .mini-section > div h3 {
+    font-size: 25px;
+  }
+
+  .mini-section > div p {
+    font-size: 15px;
+  }
+
+  .bullets-point-a li,
+  .bullets-point-b li {
+    font-size: 15px;
+  }
+
+  .footer-section p {
+    font-size: 15px;
+  }
+}
+
+/* Media Query for Screens Lower than 768px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens with a width lower than 768px */
+
+  header img {
+    width: 150px;
+  }
+
+  .right-header {
+    width: 25rem;
+  }
+
+  .right-header ul {
+    font-size: 15px;
+  }
+
+  .banner-container p {
+    font-size: 20px;
+  }
+
+  .title img {
+    width: 25px;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .title-desc {
+    font-size: 15px;
+  }
+
+  .jar h3 {
+    font-size: 20px;
+  }
+
+  .jar p {
+    font-size: 13px;
+  }
+
+  .mini-section > div h3 {
+    font-size: 20px;
+  }
+
+  .mini-section > div p {
+    font-size: 15px;
+  }
+
+  .bullets-point-a li,
+  .bullets-point-b li {
+    font-size: 15px;
+  }
+
+  .mini-section {
+    flex-direction: column;
+  }
+
+  .footer-section p {
+    font-size: 13px;
+  }
+}
+
+/* Media Query for Screens with a Width of 425px or Lower */
+@media screen and (max-width: 425px) {
+  /* Styles for screens with a width of 425px or lower */
+
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+  .menu {
+    margin-right: -15px;
+    width: 20px;
+    display: block;
+  }
+
+  .bottom-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .banner-container p {
+    font-size: 15px;
+  }
+
+  .title img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .title-desc {
+    font-size: 13px;
+    margin-top: -10px;
+  }
+
+  .jar {
+    flex-direction: column;
+  }
+
+  .jar-container img {
+    width: 300px;
+    margin: auto;
+  }
+
+  .jar h3 {
+    font-size: 15px;
+  }
+
+  .jar p {
+    font-size: 13px;
+    width: 60%;
+  }
+
+  .mini-section > div h3 {
+    font-size: 15px;
+  }
+
+  .mini-section > div p {
+    font-size: 13px;
+  }
+
+  .bullets-point-a li,
+  .bullets-point-b li {
+    font-size: 13px;
+  }
+
+  .mini-section {
+    flex-direction: column-reverse;
+  }
+
+  .second-sub-second{
+    flex-direction: column-reverse;
+  }
+
+  .footer-section p {
+    font-size: 10px;
+  }
+
+  .lower-footer{
+    gap: 15px;
+  }
+  body{
+    border: 1px solid;
+  }
+}
