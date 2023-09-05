@@ -82,7 +82,7 @@ function closeSidebar() {
 
 menuButton.addEventListener("click", () => {
   if (sidebar.style.right === "-250px" || sidebar.style.right === "") {
-    sidebar.style.right = "0"; 
+    sidebar.style.right = "0";
   } else {
     closeSidebar();
   }
