@@ -22,6 +22,38 @@ body {
   padding-right: 30px;
 }
 
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: whitesmoke;
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+
+.sidebar-items p {
+  transition: 0.2s;
+}
+
+.sidebar-items p:hover {
+  color: red;
+  cursor: pointer;
+}
+
 /* Header Styles */
 
 header {
@@ -526,13 +558,13 @@ header img {
     font-size: 15px;
   }
 
-  .jar{
+  .jar {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .jar img{
+  .jar img {
     width: 400px;
   }
 

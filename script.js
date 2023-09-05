@@ -70,3 +70,26 @@ for (let i = 0; i < numberOfItemsB; i++) {
   // Appending the <li> element to the bullets-point container
   bulletsContainerB.appendChild(listItem);
 }
+
+// Sidebar that toggle when click;
+
+const menuButton = document.querySelector(".menu-button");
+const sidebar = document.querySelector(".sidebar");
+
+function closeSidebar() {
+  sidebar.style.right = "-250px";
+}
+
+menuButton.addEventListener("click", () => {
+  if (sidebar.style.right === "-250px" || sidebar.style.right === "") {
+    sidebar.style.right = "0"; 
+  } else {
+    closeSidebar();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!sidebar.contains(event.target) && event.target !== menuButton) {
+    closeSidebar();
+  }
+});
